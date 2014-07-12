@@ -63,7 +63,7 @@ testCacheableMatrix <- function(n = 3, m = 5) {
   while(n > 0) {
     print("Setting matrix")
     mat$set(matrix(rnorm(m*m), ncol=m, nrow=m))
-    print(mat$get)
+    print(mat$get())
     
     print("Getting inverse first time")
     print(cacheSolve(mat))
